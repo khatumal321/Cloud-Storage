@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDtwDJOy1_1jf5JwxhoxZp8RGXJ1sf4cho",
+            authDomain: "test-247fa.firebaseapp.com",
+            databaseURL: "https://test-247fa-default-rtdb.firebaseio.com",
+            projectId: "test-247fa",
+            storageBucket: "test-247fa.appspot.com",
+            messagingSenderId: "66687227004",
+            appId: "1:66687227004:web:cd76a7bf91fbd72d4325f9",
+            measurementId: "G-QVJXK6GN1Y"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+</head>
+
+<body>
+    <div id="container">
+        <h1>Cloud Storage with firebase</h1>
+        <p>Upload here files</p>
+        <input type="file" onchange="uploadFiles()" id="files" name="files[]" multiple>
+    </div>
+    <a id="downloadUrl" download>
+        <div class={url} id="div"></div>
+    </a>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

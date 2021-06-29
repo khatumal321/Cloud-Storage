@@ -1,0 +1,19 @@
+#container {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#div{
+    width: 250px;
+    height: 250px;
+    background-image: url("./logo.png");
+    text-align: center;
+    margin: auto;
+
+}
+
+#downloadUrl {
+    text-align: center;
+    /* margin-top: 100px; */
+
+}
